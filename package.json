@@ -1,0 +1,23 @@
+{
+  "name": "library-kata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Puppo/library-kata",
+  "author": "Luca Del Puppo <Puppo@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.17.1",
+    "ajv": "^8.6.0",
+    "ajv-formats": "^2.1.0",
+    "fastify": "^3.18.1",
+    "undici": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.5",
+    "typescript": "^4.3.5"
+  }
+}
