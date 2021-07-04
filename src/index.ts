@@ -5,8 +5,8 @@ import booksRoute from "./books/route";
 
 const server = fastify({ logger: true });
 
-server.register(authorsRoute);
-server.register(booksRoute);
+server.register(authorsRoute, { prefix: "v1/authors" });
+server.register(booksRoute, { prefix: "v1/books" });
 
 server.listen(8080, (err, address) => {
   if (err) {

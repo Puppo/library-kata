@@ -3,7 +3,7 @@ import { BookSchema } from "./models/book";
 
 const booksRoute: FastifyPluginCallback = async (instance: FastifyInstance) => {
   instance.get(
-    `/books`,
+    `/`,
     {
       schema: {
         response: {

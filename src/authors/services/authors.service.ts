@@ -1,6 +1,5 @@
 import { stringify } from "querystring";
 import { request } from "undici";
-import {} from "ajv";
 import { BASE_API_URL } from "../../shared/constants/api";
 import validate from "../../shared/services/validation";
 

@@ -12,7 +12,7 @@ const authorsRoute: FastifyPluginCallback = async (
   instance.get<{
     Querystring: AuthorQueryString;
   }>(
-    `/authors`,
+    `/`,
     {
       schema: {
         querystring: AuthorQueryStringSchema,
